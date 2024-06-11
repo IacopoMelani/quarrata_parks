@@ -1,0 +1,94 @@
+{
+  "parks": [
+    {
+      "id": 1,
+      "name": "Area giochi Serafina Nesti",
+      "address": "Via di Mezzo, 51039 Quarrata PT",
+      "geo": {
+        "lat": 43.86435709536454,
+        "lng": 11.013607872002387
+      },
+      "description": "E’ un’area giochi per bambini attrezzata con altalene, scivoli e casette da gioco. L’area non offre alcun servizio pubblico. Durante il sopralluogo ho riscontrato alcuni pericoli per l’incolumità derivanti da siepi con rami da tagliare, alcune panchine rotte e un gioco per i bambini rotto, il tutto meglio evidenziato nelle foto allegate.",
+      "dangers": [
+        "1-1.jpg",
+        "1-2.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Area naturale protetta la Querciola",
+      "address": "",
+      "geo": {
+        "lat": 43.86173480748931,
+        "lng": 11.015629259113116
+      },
+      "description": "E’ un parco naturale molto grande dove è possibile effettuare piccole escursioni per ammirare la fauna e la flora. Al suo interno è presente la “Casa di Zela” dove è stato allestito il Museo della civiltà contadina. Le mie rilevazioni hanno riguardato la zona di ingresso e l’area parcheggio, dove ho rilevato alcune pericolosità, Un parapetto a protezione di un piccolo torrente semi divelto, alcune barriere anti-passaggio divelte e rotte, erba altissima sia nei campi che lungo le strade di accesso, parapetto a perimetro della pista ciclabile proveniente da Via Statale divelto in alcune zone, pozzetto adiacente a lampione a cui manca il coperchio con rischio di caduta all’interno. Il tutto meglio evidenziato nella documentazione fotografica allegata.",
+      "dangers": [
+        "2-1.jpg",
+        "2-2.jpg",
+        "2-3.jpg",
+        "2-4.jpg",
+        "2-5.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Parco di Villa la Magia",
+      "address": "Via Magia, 10, 51039 Quarrata PT",
+      "geo": {
+        "lat": 43.851948168346524,
+        "lng": 10.970926398897417
+      },
+      "description": "Il Parco di Villa La Magia è molto vasto e con tanti percorsi ciclo/pedonali, molte persone vengono qui per delle salutari passegiate e/o pedalate in tutta tranquilllità lungo una fitta rete di sentieri, è presente inoltre un’area giochi per bambini attrezzata con giochi e altalene situata al limitare del bosco accanto al vialone. Lungo i sentieri nel bosco l’erba è molto alta ed in alcuni casi sia le erbacce che i rovi quasi impediscono il passaggio. Ci sono diverse radici degli alberi in superficie lungo gli stradelli, inoltre due ponticini pedonali lungo i sentieri sono quasi totalmente crollati con grave pericolo per le persone.",
+      "dangers": [
+        "3-1.jpg",
+        "3-2.jpg",
+        "3-3.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Giardino Don Giuliano Mazzei",
+      "address": "Via San Lorenzo, 51039 Quarrata PT",
+      "geo": {
+        "lat": 43.844990270285045,
+        "lng": 10.978015599296684
+      },
+      "description": "E’ un parco giochi per bambini ed adulti con presenza sia di giochi per bambini che attrezzi per il fitness compreso tra Via San Lorenzo ed il torrente Fermulla. Qui ho trovato radici degli alberi fuori dal terreno e nella parte dedicata al fitness ancora erba alta.",
+      "dangers": [
+        "4-1.jpg",
+        "4-2.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Sede delle poste",
+      "address": "Via Benvenuto Cellini, 51039 Quarrata PT",
+      "geo": {
+        "lat": 43.8513207861649,
+        "lng": 10.982168389627962
+      },
+      "description": "Parco cittadino posto nei pressi delle Poste di Via Cellini a Quarrata, questi giardini sono molto frequentati sia da grandi che da bambini, sono presenti giochi vari per bambini, panchine e tavolini con sedute. Durante il mio sopralluogo ho riscontrato alcuni problemi sia riguardanti la sicurezza che l’igiene; infatti come si può vedere dalle foto allegate alcuni giochi sono rotti, l’erba è troppo alta per giocare in sicurezza ed inoltre tante cartacce a terra non raccolte.",
+      "dangers": [
+        "5-1.png",
+        "5-2.png",
+        "5-3.png"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Giardino Cinema Moderno",
+      "address": "Vicolo Bonaccorso da Montemagno, 5, 51039 Quarrata PT",
+      "geo": {
+        "lat": 43.84682592333907,
+        "lng": 10.977755890120676
+      },
+      "description": "E’ un parco cittadino nei pressi di Piazza Risorgimento, realizzato nell’area dove c’era il Cinema Moderno.In questo parco sono presenti giochi per bambini e panchine per sedersi e qui tutto è in perfetto ordine.",
+      "dangers": [
+        "6-1.png",
+        "6-2.png",
+        "6-3.png"
+      ]
+    }
+  ]
+}
