@@ -16,7 +16,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Quarrata\'s Parks',
+      title: "Quarrata's Parks",
       theme: ThemeData(
         useMaterial3: true,
         colorSchemeSeed: Colors.green,
@@ -35,42 +35,58 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
-  @override
-  void initState() {
-    super.initState();
+  void fetchAndPush() {
     allParks().then((parks) {
       Future.delayed(const Duration(seconds: 1), () {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(
-            builder: (context) => MainApp(parks: parks),
+          PageRouteBuilder(
+            pageBuilder: (_, __, ___) => MainApp(parks: parks),
+            transitionDuration: const Duration(milliseconds: 300),
+            transitionsBuilder: (_, a, __, c) => FadeTransition(opacity: a, child: c),
           ),
         );
       });
+    }).catchError((error) {
+      showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) {
+          return AlertDialog(
+            title: const Text("Errore"),
+            content: Text(error.toString()),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                  fetchAndPush();
+                },
+                child: const Text("Riprova"),
+              ),
+            ],
+          );
+        },
+      );
     });
   }
 
   @override
+  void initState() {
+    super.initState();
+    fetchAndPush();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-      child: Center(
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            Image.asset(
-              'assets/icon.png',
-              width: 90,
-              height: 90,
-            ),
-            const Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                SizedBox(height: 140),
-              ],
-            )
-          ],
+    return Scaffold(
+      body: Container(
+        color: Colors.white,
+        child: Center(
+          child: Image.asset(
+            'assets/icon.png',
+            width: 90,
+            height: 90,
+          ),
         ),
       ),
     );

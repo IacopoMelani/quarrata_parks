@@ -3,8 +3,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:quarrata_parks/utils.dart';
 
-
-
 class Park {
   final int id;
   final String name;
@@ -70,6 +68,17 @@ Future<List<Park>> allParks() async {
   if (response.statusCode == 200) {
     return ParksDTO.fromJson(jsonDecode(utf8.decode(response.bodyBytes))).parks;
   } else {
-    throw Exception('Impossibile recuperare i parchi.');
+    throw ParkException(message: "Impossibile recuperare i parchi.");
+  }
+}
+
+class ParkException implements Exception {
+  final String message;
+
+  ParkException({required this.message});
+
+  @override
+  String toString() {
+    return message;
   }
 }
